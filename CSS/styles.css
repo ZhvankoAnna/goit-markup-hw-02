@@ -1,0 +1,103 @@
+/* основной цвет текста #757575 */
+/* вторичный цвет текста #212121 */
+/* белый цвет #FFFFFF */
+/* цвет акцента #2196F3 */
+/* вторичный цвет фона #F5F4FA */
+/* цвет фона героя и футера #2F303A */
+/* цвет контактных данных в футере rgba(255, 255, 255, 0.6) */
+
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --white_color: #FFFFFF;
+    --accent-color: #2196F3;
+    --secondary-bg-color: #F5F4FA;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--white_color);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title {
+   color: var(--secondary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.button {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color);
+}
+
+.button:hover {
+    color: var(--white_color);
+    background-color: var(--accent-color);
+}
+
+/* Шапка */
+.logo {
+    color: #000000;
+}
+
+.logo > span {
+    color: var(--accent-color);
+}
+
+.header .link {
+   color: var(--secondary-text-color);
+}
+
+.header .link:hover,
+.header .link:focus,
+.link.current {
+    color: var(--accent-color);
+}
+
+ /* Герой */
+.hero {
+    background-color: #2F303A;
+ }
+.hero-title {
+    color: var(--white_color);
+}
+
+.hero-button {
+    color: var(--white_color);
+    background-color: var(--accent-color);
+}
+
+/* Наша команда */
+.section.team {
+    background-color: var(--secondary-bg-color);
+}
+
+/* Футер */
+.footer {
+    background-color: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .logo {
+    color: var(--white_color);
+}
+
+.address {
+    color: var(--white_color);
+    font-style: normal;
+}
+
+.footer .contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
