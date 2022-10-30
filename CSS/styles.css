@@ -1,9 +1,11 @@
 /* основний колір тексту #757575 */
 /* вторинний колір тексту #212121 */
+/* колір контактів у шапці #757575 */
 /* білий колір #FFFFFF */
 /* вторинний колір фону #F5F4FA */
 /* колір фону героя та футера #2F303A */
 /* колір акценту #2196F3 */
+/* колір акценту кнопки героя #188CE8 */
 /* колір лого шапки #000000 */
 /* колір контактних даних футера rgba(255, 255, 255, 0.6) */
 
@@ -14,8 +16,10 @@
   --secondary-bg-color: #f5f4fa;
   --bg-color-footer: #2f303a;
   --accent-color: #2196f3;
+  --accent-color-herobtn: #188CE8;
   --logo-header: #000000;
-  --contacts-color: rgba(255, 255, 255, 0.6);
+  --header-contacts-color: #757575;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -90,12 +94,22 @@ body {
   color: var(--accent-color);
 }
 
+.contacts .link {
+  color: var(--header-contacts-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
 /* Герой */
 .hero {
   background-color: var(--bg-color-footer);
 }
 .hero .title {
   color: var(--white-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -105,9 +119,17 @@ body {
 }
 
 .hero .button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
+}
+
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--accent-color-herobtn);
 }
 
 /* Наші переваги */
@@ -165,7 +187,7 @@ body {
 }
 
 .footer-link {
-  color: var(--contacts-color);
+  color: var(--footer-contacts-color);
 
   font-style: normal;
   text-decoration: none;
